@@ -1,0 +1,5 @@
+[package]
+description =  This is a Zeek package for detecting known covert channels in Modbus/TCP.
+tags = Modbus, CovertChannels
+script_dir = zeek-modbus-cc
+version = 0.1
