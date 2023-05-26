@@ -88,15 +88,15 @@ Currently, this plugin is able to detect two covert channels in Modbus/TCP.
 More detectors are under development.
 
 #### *CC1* - Unit ID Modulation
-![Modbus Unit ID Covert Channel](img/Modbus-UnitID-github-light#gh-light-mode-only.png)
-![Modbus Unit ID Covert Channel](img/Modbus-UnitID-github-dark#gh-dark-mode-only.png)
+![Modbus Unit ID Covert Channel](img/Modbus-UnitID-github-light.png#gh-light-mode-only)
+![Modbus Unit ID Covert Channel](img/Modbus-UnitID-github-dark.png#gh-dark-mode-only)
 This covert channel uses the Unit ID field to encode hidden information.
 Use [conf.zeek](/conf.zeek) to set up Unit IDs that are legit for your setup in order to avoid false positives.
 We published and discussed this covert channel in  [[LD20]](https://doi.org/10.1016/j.ifacol.2020.12.258).
 
 #### *CC2* - Unused Bits
-![Modbus Unused Bits Covert Channel](img/Modbus-UnusedBits-github-light#gh-light-mode-only.png)
-![Modbus Unused Bits Covert Channel](img/Modbus-UnusedBits-github-light#gh-dark-mode-only.png)
+![Modbus Unused Bits Covert Channel](img/Modbus-UnusedBits-github-light.png#gh-light-mode-only)
+![Modbus Unused Bits Covert Channel](img/Modbus-UnusedBits-github-dark.png#gh-dark-mode-only)
 This covert channels makes use of unused bits found in certain Modbus/TCP packets, e.g., in case of ReadCoilResponse packets. 
 As Modbus/TCP is byte-oriented, 0-7 bits of the last byte may be zero-filled and leveraged by an adversary to establish a hidden communication channel.
 We published and discussed this covert channel in [[LD20]](https://doi.org/10.1016/j.ifacol.2020.12.258).
