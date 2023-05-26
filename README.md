@@ -40,8 +40,8 @@
       <a href="#covert-channels-in-modbustcp">Covert Channels in Modbus/TCP</a>
       <ul>
          <li><a href="#covert-channel-detection">Covert Channel Detection</a></li>
-         <li><a href="#cc1-unit-id-modulation">CC1 - Unit ID Modulation</a></li>
-         <li><a href="#cc2-unused-bits">CC2 - Unused Bits</a></li>
+         <li><a href="##cc1---unit-id-modulation">CC1 - Unit ID Modulation</a></li>
+         <li><a href="##cc2---unused-bits">CC2 - Unused Bits</a></li>
       </ul>
     </li>
    <li>
@@ -88,7 +88,7 @@ Currently, this plugin is able to detect two covert channels in Modbus/TCP.
 More detectors are under development.
 
 #### *CC1* - Unit ID Modulation
-![Modbus Unit ID Covert Channel](img/Modbus-UnitId-github.png)
+![Modbus Unit ID Covert Channel](img/Modbus-UnitID-github.png)
 This covert channel uses the Unit ID field to encode hidden information.
 Use [conf.zeek](/conf.zeek) to set up Unit IDs that are legit for your setup in order to avoid false positives.
 We published and discussed this covert channel in  [[LD20]](https://doi.org/10.1016/j.ifacol.2020.12.258).
